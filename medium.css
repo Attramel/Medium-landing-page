@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* --- Navigation --- */
+.nav-menu {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    /* Aligns items to the right */
+    align-items: center;
+    /* Vertically centers items */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Logo styling */
+/* Logo styling */
+nav a:first-child {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Times New Roman', serif;
+    margin-right: auto;
+    letter-spacing: -1px;
+    /* Tighter tracking for logo feel */
+}
+
+/* 'Get Started' button */
+nav a:last-child {
+    background-color: #191919;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    /* Pill shape */
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:last-child:hover {
+    background-color: #000;
+}
+
+/* --- Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 6rem 1rem;
+    /* More vertical whitespace */
+    background-color: #fff;
+    border-bottom: 1px solid #191919;
+    /* Solid black line like Medium */
+}
+
+.hero img {
+    max-width: 240px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 5.5rem;
+    /* Large, bold typography */
+    margin-bottom: 1.5rem;
+    font-family: 'Times New Roman', serif;
+    font-weight: 400;
+    /* Medium uses lighter weights for large serif text */
+    line-height: 1;
+    color: #191919;
+    letter-spacing: -2px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #242424;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-content img {
+    grid-row: 1 / span 2;
+    /* Aligns image to the top of the grid * use as fallback */
+    grid-row: auto;
+    margin-bottom: 0;
+}
+
+/* --- Features Section --- */
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.features ul {
+    list-style-type: none;
+}
+
+.features li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.features li::before {
+    content: "•";
+    color: #000;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    line-height: 1;
+}
