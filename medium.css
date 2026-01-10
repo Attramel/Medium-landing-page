@@ -106,8 +106,9 @@ nav a:last-child:hover {
 
 .hero-content {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto;
     align-items: center;
+    justify-content: flex-start;
     text-align: left;
     gap: 2rem;
     max-width: 1000px;
@@ -153,4 +154,39 @@ nav a:last-child:hover {
     font-size: 1.5rem;
     margin-right: 1rem;
     line-height: 1;
+}
+
+.footer-content {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    /* Aligns items to the right */
+    align-items: center;
+    /* Vertically centers items */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    /* Align with flex items */
+    font-size: 1rem;
+    color: #140303;
+    font-weight: 400;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content .copyright {
+    color: #6b6b6b;
+    font-size: 0.9rem;
+}
+
+.footer-content p a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content p a:hover {
+    color: #191919;
 }
